@@ -14,7 +14,7 @@ const Register = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post( 'http://localhost:3001/register', {name,dob, email, password})
+        axios.post( 'https://quantum-be.onrender.com/register', {name,dob, email, password})
         .then(result => {
             console.log(result);
             localStorage.setItem('userdata',result.data);
